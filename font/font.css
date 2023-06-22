@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.ttf') format('ttf'), /* replace with the path to the regular font file */
+         url('Poppins-Regular.ttf') format('woff'); /* replace with the path to the regular font file */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Bold.ttf') format('woff2'), /* replace with the path to the bold font file */
+         url('Poppins-Bold.ttf') format('woff'); /* replace with the path to the bold font file */
+    font-weight: bold;
+    font-style: normal;
+  }

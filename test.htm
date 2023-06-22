@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <style>
+ nav {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li:first-child {
+  flex-grow: 1;
+}
+
+.menu li:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.menu li:not(:first-child):not(:last-child) {
+  margin: 0 20px;
+  flex-grow: 2;
+}
+
+.menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+          <a href="#">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><hr></li>
+            <li><a href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+</body>
+</html>
